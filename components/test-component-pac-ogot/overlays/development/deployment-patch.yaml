@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-ogot
+  namespace: build-e2e-jmpx-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:6c2db448c932fc156f143d6b3f279592ef0cb96a568e43d1974ecc888d864b60
+        name: container-image
+        resources: {}
+status: {}
